@@ -63,6 +63,17 @@ footer {
   margin-top: 28px;
 }
 
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      height: 50%;
+      margin: auto;
+  }
+
+.hero-slide {
+    margin-top: -40px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
