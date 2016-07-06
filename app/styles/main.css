@@ -1,24 +1,15 @@
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
 /* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-}
 
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 header,
-.marketing,
 footer {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Custom page header */
 header {
   border-bottom: 1px solid #e5e5e5;
@@ -39,39 +30,40 @@ footer {
   border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-
-.marketing p + h4 {
-  margin-top: 28px;
-}
-
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
-      height: 50%;
       margin: auto;
+      max-height: 400px !important;
   }
 
 .hero-slide {
     margin-top: -40px;
+}
+
+.navbar-toggle {
+    z-index:3;
+}
+
+/*.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+*/
+
+.myNav {
+    background-color: rgba(50,50,50, 0.8);
+    height: 60px;
+    border-bottom: 0px;
+}
+
+.navbar-header #brand{
+    font-family: 'FuturaBook', Arial, sans-serif;
+    color: white;
+    font-size: 20px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -79,22 +71,11 @@ footer {
   .container {
     max-width: 730px;
   }
+}
 
-  /* Remove the padding we set earlier */
-  header,
-  .marketing,
-  footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+@media (max-width: 992px) {
+  .myNav {
+    height: 60px;
   }
 }
+
