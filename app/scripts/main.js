@@ -1,1 +1,3 @@
-console.log('\'Allo \'Allo!');
+$(".carousel").carousel({
+	interval: 5000
+})

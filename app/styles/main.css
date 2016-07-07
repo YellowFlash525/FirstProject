@@ -45,14 +45,16 @@ footer {
     z-index:3;
 }
 
-/*.navbar-brand {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: center;
-    margin: 0 auto;
+.nav.navbar-nav > li > a {
+  color: white !important;
+  padding-top: 20px;
+  font-size: 17px;
 }
-*/
+
+.nav.navbar-nav > li > a:hover {
+  background-color: white;
+  color: black !important;
+}
 
 .myNav {
     background-color: rgba(50,50,50, 0.8);
@@ -63,7 +65,8 @@ footer {
 .navbar-header #brand{
     font-family: 'FuturaBook', Arial, sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    padding-top: 16px;
 }
 
 /* Responsive: Portrait tablets and up */
