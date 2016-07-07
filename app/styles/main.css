@@ -23,6 +23,10 @@ header h3 {
   padding-bottom: 19px;
 }
 
+ul.navbar-right > li:last-child {
+  padding-right: 30px;
+}
+
 /* Custom page footer */
 footer {
   padding-top: 19px;
@@ -47,8 +51,10 @@ footer {
 
 .nav.navbar-nav > li > a {
   color: white !important;
-  padding-top: 20px;
+  padding: 20px 20px 15px;
   font-size: 17px;
+  font-family: 'futura-pt-condensed',Futura,sans-serif;
+  text-transform: uppercase;
 }
 
 .nav.navbar-nav > li > a:hover {
