@@ -1,37 +1,22 @@
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;    
 
-}
-/* Everything but the jumbotron gets side spacing for mobile first views */
-header,
-footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-/* Custom page header */
-header {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
 }
 
 ul.navbar-right > li:last-child {
-  padding-right: 30px;
+  padding-right: 40px;
 }
 
-/* Custom page footer */
-footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.carousel-inner{
+     height: 100%;
 }
 
 .carousel-inner > .item > img,
@@ -52,8 +37,8 @@ footer {
 .nav.navbar-nav > li > a {
   color: white !important;
   padding: 20px 20px 15px;
-  font-size: 17px;
-  font-family: 'futura-pt-condensed',Futura,sans-serif;
+  font-size: 14px;
+  font-family: 'futura-pt-condensed', Futura,sans-serif;
   text-transform: uppercase;
 }
 
@@ -76,9 +61,15 @@ footer {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 800px)  {
   .container {
     max-width: 730px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container-fluida.social-media {
+    display: none;
   }
 }
 
@@ -86,5 +77,53 @@ footer {
   .myNav {
     height: 60px;
   }
+
 }
 
+.social-media {
+  background-color: #222;
+  border-color: #080808;
+}
+
+.center {
+    margin: 10px 0px 10px 494px;
+}
+
+.box  {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0 17px;
+  line-height: 45px;
+  font-family: Entypo;
+  font-size: 20px;
+  text-align: center;
+  color: #151718;
+  border-radius: 48%;
+  background: #eee;
+  overflow: hidden;
+  cursor: pointer;
+  transition:all .8s ease;
+}
+.box:hover {
+  transition:.5s linear;
+  color: white; 
+    
+}
+
+#facebook:hover {
+  background-color: #3a5795;
+  box-shadow: inset 0 0 0 22px #3a5795;
+}
+#twitter:hover {
+  background-color: #00acee;
+  box-shadow: inset 0 0 0 22px #00acee;
+}
+#google:hover {
+  background-color: #dd4b39;
+  box-shadow: inset 0 0 0 22px #dd4b39;
+}
+#linkedin:hover {
+  background-color:#0e76a8;
+  box-shadow: inset 0 0 0 25px #0e76a8;
+}
