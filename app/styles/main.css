@@ -8,14 +8,28 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;  
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;  
+    -o-background-size: cover;
 
 }
 
+footer {
+    position: static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    background: rgba(102,102,102,1);/* Old Browsers */
+    background: -moz-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(102,102,102,1)), color-stop(50%, rgba(66,66,66,1)), color-stop(54%, rgba(67,67,67,1)), color-stop(55%, rgba(67,67,67,1)), color-stop(100%, rgba(76,76,76,1)));/* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* IE 10+ */
+    background: linear-gradient(to right, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%);/* W3C */
+}
+
 body[data-skin="Default"] {
-    background: lightgrey;
+    background: #D3D3D3;
     color: #222;
 }
 
@@ -36,9 +50,6 @@ ul.navbar-right > li:last-child {
 
 .hero-slide {
     margin-top: -40px;
-    -webkit-box-shadow: 0px 9px 40px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 9px 40px -5px rgba(0,0,0,0.75);
-    box-shadow: 0px 9px 40px -5px rgba(0,0,0,0.75);
 }
 
 .navbar-toggle {
@@ -54,7 +65,7 @@ ul.navbar-right > li:last-child {
 }
 
 .nav.navbar-nav > li > a:hover {
-    background-color: white;
+    background-color: #FFFFFF;
     color: black !important;
 }
 
@@ -66,16 +77,84 @@ ul.navbar-right > li:last-child {
 
 .navbar-header #brand{
     font-family: 'FuturaBook', Arial, sans-serif;
-    color: white;
+    color: #FFFFFF;
     font-size: 25px;
     padding-top: 16px;
 }
 
-.myBox {
+.myBox1 {
     padding: 25px;
-    margin: 25px;
-    background-color: white;
-    border-radius: 10px;
+    margin: 20px 25px 15px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    text-align: justify;
+    -webkit-box-shadow: 0px 3px 38px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 38px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 38px -5px rgba(0,0,0,0.75);
+}
+
+.myBox2 {
+    padding: 15px;
+    margin: 15px 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 38px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 38px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 38px -5px rgba(0,0,0,0.75);
+}
+
+.social-media {
+    background: rgba(102,102,102,1);/* Old Browsers */
+    background: -moz-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(102,102,102,1)), color-stop(50%, rgba(66,66,66,1)), color-stop(54%, rgba(67,67,67,1)), color-stop(55%, rgba(67,67,67,1)), color-stop(100%, rgba(76,76,76,1)));/* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%); /* IE 10+ */
+    background: linear-gradient(to right, rgba(102,102,102,1) 0%, rgba(66,66,66,1) 50%, rgba(67,67,67,1) 54%, rgba(67,67,67,1) 55%, rgba(76,76,76,1) 100%);/* W3C */
+    border-color: #080808;
+}
+
+.center {
+    margin: 10px 0px 10px 494px;
+}
+
+.box  {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0 17px;
+    line-height: 45px;
+    font-family: Entypo;
+    font-size: 20px;
+    text-align: center;
+    color: #151718;
+    border-radius: 48%;
+    background: #eee;
+    overflow: hidden;
+    cursor: pointer;
+    transition:all .8s ease;
+}
+.box:hover {
+    transition:.5s linear;
+    color: #FFFFFF; 
+    
+}
+
+#facebook:hover {
+  background-color: #3a5795;
+  box-shadow: inset 0 0 0 22px #3a5795;
+}
+#twitter:hover {
+  background-color: #00acee;
+  box-shadow: inset 0 0 0 22px #00acee;
+}
+#google:hover {
+  background-color: #dd4b39;
+  box-shadow: inset 0 0 0 22px #dd4b39;
+}
+#linkedin:hover {
+  background-color:#0e76a8;
+  box-shadow: inset 0 0 0 25px #0e76a8;
 }
 
 /* Responsive: Portrait large and down */
@@ -109,50 +188,4 @@ ul.navbar-right > li:last-child {
   }
 }
 
-.social-media {
-    background-color: #222;
-    border-color: #080808;
-}
 
-.center {
-    margin: 10px 0px 10px 494px;
-}
-
-.box  {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    margin: 0 17px;
-    line-height: 45px;
-    font-family: Entypo;
-    font-size: 20px;
-    text-align: center;
-    color: #151718;
-    border-radius: 48%;
-    background: #eee;
-    overflow: hidden;
-    cursor: pointer;
-    transition:all .8s ease;
-}
-.box:hover {
-    transition:.5s linear;
-    color: white; 
-    
-}
-
-#facebook:hover {
-  background-color: #3a5795;
-  box-shadow: inset 0 0 0 22px #3a5795;
-}
-#twitter:hover {
-  background-color: #00acee;
-  box-shadow: inset 0 0 0 22px #00acee;
-}
-#google:hover {
-  background-color: #dd4b39;
-  box-shadow: inset 0 0 0 22px #dd4b39;
-}
-#linkedin:hover {
-  background-color:#0e76a8;
-  box-shadow: inset 0 0 0 25px #0e76a8;
-}
