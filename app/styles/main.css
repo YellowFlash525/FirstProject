@@ -3,8 +3,6 @@
 /* Space out content a bit */
 body {
     font-family: "calluna-sans","Gill Sans",Calibri,"Trebuchet MS",sans-serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -49,7 +47,7 @@ ul.navbar-right > li:last-child {
   }
 
 .hero-slide {
-    margin-top: -40px;
+    margin-top: -20px;
 }
 
 .navbar-toggle {
@@ -115,14 +113,14 @@ ul.navbar-right > li:last-child {
 }
 
 .center {
-    margin: 10px 0px 10px 494px;
+    margin: 12px 0px 8px 480px;
 }
 
 .box  {
     display: inline-block;
     width: 45px;
     height: 45px;
-    margin: 0 17px;
+    margin: 0 15px;
     line-height: 45px;
     font-family: Entypo;
     font-size: 20px;
@@ -158,6 +156,12 @@ ul.navbar-right > li:last-child {
 }
 
 /* Responsive: Portrait large and down */
+@media screen and (max-width: 1060px) {
+  .container-fluid.social-media {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1000px)  {
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -167,24 +171,20 @@ ul.navbar-right > li:last-child {
   }
 }
 
+@media (max-width: 992px) {
+  .navbar-collapse.collapse ul {
+    background-color: rgba(50,50,50, 0.8);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+}
+
 @media screen and (max-width: 750px)  {
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
       margin: auto;
       max-height: 200px !important;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .container-fluida.social-media {
-    display: none;
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar-collapse.collapse {
-    background-color: rgba(50,50,50, 0.8);
   }
 }
 
