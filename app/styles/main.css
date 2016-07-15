@@ -1,5 +1,3 @@
-@import url('http://weloveiconfonts.com/api/?family=entypo');
-
 /* Space out content a bit */
 body {
     font-family: "calluna-sans","Gill Sans",Calibri,"Trebuchet MS",sans-serif;
@@ -7,14 +5,10 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-
 }
 
 footer {
     position: static;
-    right: 0;
-    bottom: 0;
-    left: 0;
     padding: 1rem;
     color: white;
     text-align: center;
@@ -46,17 +40,19 @@ ul.navbar-right > li:last-child {
     z-index:3;
 }
 
-.nav.navbar-nav > li > a {
+li > .link-nav {
+    transition: 0.3s ease;
     color: white !important;
     padding: 20px 20px 15px;
     font-size: 14px;
     font-family: 'futura-pt-condensed', Futura,sans-serif;
     text-transform: uppercase;
+    border-top: 4px solid rgba(50,50,50, 0.8);
 }
 
-.nav.navbar-nav > li > a:hover {
-    background-color: #FFFFFF;
-    color: black !important;
+li > .link-nav:hover {
+    border-top: 4px solid #FFFFFF;
+    padding: 15px 15px;
 }
 
 .myNav {
@@ -105,7 +101,7 @@ ul.navbar-right > li:last-child {
   padding: 0 20px;
   display: inline-block;
   pointer-events: auto;
-  color: white;
+  color: #FFFFFF;
   font-size: 20px;
 }
 
@@ -125,18 +121,23 @@ ul.navbar-right > li:last-child {
   }
 }
 
-@media (max-width: 1060px) {
-  .navbar-collapse.collapse {
-    background-color: rgba(50,50,50, 0.8);
-  }
-}
-
-@media screen and (max-width: 750px)  {
+@media screen and (max-width: 760px)  {
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
       margin: auto;
       max-height: 200px !important;
+  }
+  .navbar-collapse.collapse {
+    background-color: rgba(50,50,50, 0.8);
+  }
+
+  .myNav {
+    height: 50px;
+  }
+
+  li > .link-nav {
+    border-top: initial;
   }
 }
 
