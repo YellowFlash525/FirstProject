@@ -85,7 +85,7 @@ li > .link-nav:hover {
 }
 
 .parallax {
-  background: url("../images/background.jpg") repeat fixed 100%;
+  background: url("../images/background.jpg") repeat fixed 60%;
 }
 
 .parallax-inner {
@@ -144,7 +144,7 @@ li > .link-nav:hover {
 
 /* Responsive: Portrait large and down */
 @media screen and (max-width: 1060px) {
-  .container-fluid.social-media {
+  .container-fluid.social-media-icon {
     display: none;
   }
   .nav-scroll-title > .row > h2 {
@@ -192,6 +192,4 @@ li > .link-nav:hover {
     padding-left: 50px;
   }
 }
-
-
 
