@@ -43,7 +43,7 @@ li > .link-nav {
     font-size: 13px;
     font-family: 'futura-pt-condensed', Futura,sans-serif;
     text-transform: uppercase;
-    border-top: 4px solid rgba(50,50,50, 0.0);
+    border-top: 4px solid rgba(50,50,50, 0.8);
 }
 
 li > .link-nav:hover {
@@ -57,6 +57,14 @@ li > .link-nav:hover {
     border-bottom: 0px;
     margin-right: 0px;
 }
+
+.fixedNav {
+    background-color: rgba(50,50,50, 1.0);
+    height: 60px;
+    border-bottom: 0px;
+    margin-right: 0px;
+}
+
 
 .navbar-header #brand{
     font-family: 'FuturaBook', Arial, sans-serif;
@@ -114,6 +122,7 @@ li > .link-nav:hover {
   font-size: 20px;
 }
 
+/* NavScroll */
 
 .nav-scroll-title {
     background-color: #FFFFFF;
@@ -128,6 +137,55 @@ li > .link-nav:hover {
     margin-bottom: 10px;
     padding-left: 150px;
     font-size: 20px;
+}
+
+/* One Column listing */
+
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+
+.view .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view img {
+  display: block;
+  position: relative;
+}
+
+.overlay:hover .mask {
+  opacity: 1;
+}
+
+.overlay img {
+  transition: all 0.2s linear;
+}
+
+.overlay .mask {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.lead {
+    text-align: justify;
+}
+
+.z-depth-1-half {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
 }
 
 /* Responsive: Portrait large and down */
@@ -165,6 +223,10 @@ li > .link-nav:hover {
     height: 50px;
   }
 
+  .fixedNav {
+    height: 50px;
+  }
+
   li > .link-nav {
     border-top: initial;
   }
@@ -176,5 +238,8 @@ li > .link-nav:hover {
   .nav-scroll-title > .row > h2 {
     padding-left: 50px;
   }
+  .post-title {
+        margin-top: 1rem;
+  }    
 }
 

@@ -2,21 +2,31 @@ $(".carousel").carousel({
 	interval: 5000
 })
 
+$('nav div ul li a').on('click', function() {
 
-$(function() {
-  // This will select everything with the class smoothScroll
-  // This should prevent problems with carousel, scrollspy, etc...
-  $('.smoothScroll').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - 60
-        }, 1000); // The number here represents the speed of the scroll in milliseconds
-        return false;
-      }
+    var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+
+    $('body,html').animate({
+        scrollTop: scrollPoint
+    }, 1000);
+
+    return false;
+
+})
+
+
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    var height = document.getElementById('team1').offsetTop - 60;
+    if (windscroll >= height) {
+        $('nav').removeClass('myNav');
+        $('nav').addClass('fixedNav');
+
+    } else {
+
+        $('nav').removeClass('fixedNav');
+        $('nav').addClass('myNav');
     }
-  });
-});
 
+}).scroll();
