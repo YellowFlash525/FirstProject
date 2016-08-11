@@ -3,7 +3,6 @@ $(".carousel").carousel({
 })
 
 $('nav div ul li a').on('click', function() {
-
     var scrollAnchor = $(this).attr('data-scroll'),
         scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
 
@@ -14,7 +13,6 @@ $('nav div ul li a').on('click', function() {
     return false;
 
 })
-
 
 $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
@@ -30,3 +28,12 @@ $(window).scroll(function() {
     }
 
 }).scroll();
+
+$(function() {
+  $('.navbar-header').click(function() {
+    //Toggles the class for the outter circles
+    $(this).toggleClass('clicked')
+    //Toggles the class for the menu lines transformation into an X symbol
+    $('.navbar-toggle').toggleClass('clicked')
+  })
+})
