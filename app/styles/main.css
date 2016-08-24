@@ -34,7 +34,7 @@ ul.navbar-right > li:last-child {
 }
 
 .navbar-toggle {
-    z-index:3;
+    z-index: 3;
 }
 
 li > .link-nav {
@@ -248,7 +248,7 @@ li > .link-nav:hover {
 
 
 .childGallery:hover {
-  transform: scale(2);
+  transform: scale(1);
 }
 
 
@@ -304,11 +304,19 @@ li > .link-nav:hover {
     border-top: 0px;
     padding: 10px 15px;
   }
+
   .nav-scroll-title > .row > h2 {
     padding-left: 50px;
   }
+
   .post-title {
     margin-top: 1rem;
-  }    
+  }  
+
+  .childGallery {
+    width: 200px;
+    height: 150px;
+    margin: 0px 3px 5px;
+  }  
 }
 

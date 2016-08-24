@@ -2,7 +2,7 @@ $(".carousel").carousel({
 	interval: 5000
 })
 
-$('nav div ul li a').on('click', function() {
+$(".link-nav").on('click', function() {
     var scrollAnchor = $(this).attr('data-scroll'),
         scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
 
