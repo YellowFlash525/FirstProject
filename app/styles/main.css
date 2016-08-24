@@ -236,58 +236,19 @@ li > .link-nav:hover {
 
 }
 
-.childGallery:nth-child(1) {
+.childGallery:nth-child(odd) {
   background-color: yellow;
   transform-origin: left top;
 }
 
-.childGallery:nth-child(2) {
+.childGallery:nth-child(even) {
   background-color: blue;
   transform-origin: center top;
 }
 
-.childGallery:nth-child(3) {
-  background-color: green;
-  transform-origin: center top;
-}
-
-.childGallery:nth-child(4) {
-  background-color: red;
-  transform-origin: right top;
-}
-
-.childGallery:nth-child(5) {
-  background-color: green;
-  transform-origin: left top;
-}
-
-.childGallery:nth-child(6) {
-  background-color: green;
-  transform-origin: left top;
-}
-
-.childGallery:nth-child(7) {
-  background-color: red;
-  transform-origin: center top;
-}
-
-.childGallery:nth-child(8) {
-  background-color: yellow;
-  transform-origin: center top;
-}
-
-.childGallery:nth-child(9) {
-  background-color: blue;
-  transform-origin: right top;
-}
-
-.childGallery:nth-child(10) {
-  background-color: yellow;
-  transform-origin: center top;
-}
 
 .childGallery:hover {
-  transform: scale(1);
+  transform: scale(2);
 }
 
 
