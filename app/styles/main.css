@@ -53,6 +53,7 @@ li > .link-nav:hover {
 }
 
 /* Navbar Style */
+
 .myNav {
     background-color: rgba(50,50,50, 0.8);
     height: 60px;
@@ -119,7 +120,7 @@ li > .link-nav:hover {
   pointer-events: auto;
   color: #FFFFFF;
   opacity: 0.65;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .social-media-icon > .row > a > i:hover {
@@ -128,7 +129,6 @@ li > .link-nav:hover {
   pointer-events: auto;
   color: #FFFFFF;
   opacity: 1.0;
-  font-size: 25px;
 }
 
 /* NavScroll */
@@ -215,6 +215,81 @@ li > .link-nav:hover {
 .icon-bar {
   transition: all .3s;
 }
+
+/* Gallery */
+
+.parentGallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.childGallery {
+    width: 250px;
+    height: 175px;
+    background-color: red;
+    transition: transform .4s ease-in-out;
+    margin: 0px 10px 20px;
+
+}
+
+.childGallery:nth-child(1) {
+  background-color: yellow;
+  transform-origin: left top;
+}
+
+.childGallery:nth-child(2) {
+  background-color: blue;
+  transform-origin: center top;
+}
+
+.childGallery:nth-child(3) {
+  background-color: green;
+  transform-origin: center top;
+}
+
+.childGallery:nth-child(4) {
+  background-color: red;
+  transform-origin: right top;
+}
+
+.childGallery:nth-child(5) {
+  background-color: green;
+  transform-origin: left top;
+}
+
+.childGallery:nth-child(6) {
+  background-color: green;
+  transform-origin: left top;
+}
+
+.childGallery:nth-child(7) {
+  background-color: red;
+  transform-origin: center top;
+}
+
+.childGallery:nth-child(8) {
+  background-color: yellow;
+  transform-origin: center top;
+}
+
+.childGallery:nth-child(9) {
+  background-color: blue;
+  transform-origin: right top;
+}
+
+.childGallery:nth-child(10) {
+  background-color: yellow;
+  transform-origin: center top;
+}
+
+.childGallery:hover {
+  transform: scale(1);
+}
+
 
 /* Responsive: Portrait large and down */
 @media screen and (max-width: 1060px) {
