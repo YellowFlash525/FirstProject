@@ -95,12 +95,12 @@ li > .link-nav:hover {
 /* Scroll background */
 
 .parallax {
-  background: url("../images/background.jpg") repeat fixed 60%;
+  background: url("../images/background.jpg") repeat fixed 55%;
 }
 
 .parallax-inner {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 /* Social media icon */
