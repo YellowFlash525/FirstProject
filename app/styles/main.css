@@ -218,7 +218,7 @@ li > .link-nav:hover {
 
 /* Gallery */
 
-.parentGallery {
+.parentView {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -227,28 +227,76 @@ li > .link-nav:hover {
     width: 100%;
 }
 
-.childGallery {
+.childView {
     width: 250px;
     height: 175px;
-    background-color: red;
-    transition: transform .4s ease-in-out;
-    margin: 0px 10px 20px;
-
+    margin: 0px 5px 10px;
+    border: 6px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+}
+.childView .mask {
+    width: 250px;
+    height: 175px;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: -5px;
 }
 
-.childGallery:nth-child(odd) {
-  background-color: yellow;
-  transform-origin: left top;
+.childView h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.childView p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
 }
 
-.childGallery:nth-child(even) {
-  background-color: blue;
-  transform-origin: center top;
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transform: translate(460px, -100px) rotate(180deg);
+    transition: all 0.2s 0.4s ease-in-out;
 }
 
+.view-first h2 {
+    transform: translateY(-100px);
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateX(300px) rotate(90deg);
+    transition: all 0.2s linear;
+}
 
-.childGallery:hover {
-  transform: scale(1);
+.view-first:hover .mask { 
+  opacity: 1;
+  transition-delay: 0s;              
+  transform: translate(0px, 0px);
+}
+.view-first:hover h2 {
+  transform: translateY(0px); 
+  transition-delay: 0.5s;
+}
+.view-first:hover p {
+  transform: translateX(0px) rotate(0deg);
+  transition-delay: 0.4s;
 }
 
 
