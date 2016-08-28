@@ -148,54 +148,9 @@ li > .link-nav:hover {
     font-size: 20px;
 }
 
-/* One Column listing */
+/* Team present */
 
-.view {
-  overflow: hidden;
-  position: relative;
-  cursor: default;
-}
-
-.view .mask {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-}
-
-.view img {
-  display: block;
-  position: relative;
-}
-
-.overlay:hover .mask {
-  opacity: 1;
-}
-
-.overlay img {
-  transition: all 0.2s linear;
-}
-
-.overlay .mask {
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-}
-
-.lead {
-    text-align: justify;
-}
-
-.z-depth-1-half {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-.img-fluid {
-    display: block;
-    max-width: 100%;
-    max-height: auto;
-}
+/* TO DO */
 
 /* Navbar Toggle effect */ 
 
@@ -254,7 +209,7 @@ li > .link-nav:hover {
     font-size: 17px;
     padding: 5px;
     background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
+    margin: 50px 0 0 0;
 }
 .childView p {
     font-family: Georgia, serif;
@@ -263,7 +218,7 @@ li > .link-nav:hover {
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
-    text-align: center
+    text-align: center;
 }
 
 .view-first img { 
