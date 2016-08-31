@@ -92,7 +92,7 @@ li > .link-nav:hover {
     border-radius: 5px;
 }
 
-/* Scroll background */
+/* Paralax and progress bar*/
 
 .parallax {
   background: url("../images/background.jpg") repeat fixed 55%;
@@ -150,7 +150,34 @@ li > .link-nav:hover {
 
 /* Team present */
 
-/* TO DO */
+.teamFoto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+  position: relative;
+  left: 100px;
+  width: 100%;
+}
+
+.teamFoto img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  margin: 20px 60px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.teamFoto img:hover {
+  opacity: 1.0;
+}
+
+.teamFoto .infoTeam {
+  max-width: 200px;
+  max-height: 200px;
+  display: none;
+
+}
 
 /* Navbar Toggle effect */ 
 
@@ -321,5 +348,61 @@ li > .link-nav:hover {
     height: 150px;
     margin: 0px 3px 5px;
   }  
+}
+
+@media screen and (max-width: 650px)  {
+  .teamFoto {
+    position: relative;
+    left: 10px;
+  }
+
+  .teamFoto img{
+    max-height: 160px;
+    max-width: 160px;
+    margin: 20px 20px !important;
+  }
+}
+
+@media screen and (max-width: 620px)  {
+  .teamFoto {
+    position: relative;
+    left: 90px;
+  }
+}
+
+@media screen and (max-width: 560px)  {
+  .teamFoto {
+    position: relative;
+    left: 70px;
+  }
+}
+@media screen and (max-width: 480px)  {
+  .teamFoto {
+    position: relative;
+    left: 3px;
+  }
+  .teamFoto img{
+    margin: 20px 10px !important;
+  }
+}
+
+@media screen and (max-width: 380px)  {
+  .teamFoto {
+    position: relative;
+    left: 80px;
+  }
+  .teamFoto img{
+    margin: 20px 10px !important;
+  }
+}
+
+@media screen and (max-width: 320px)  {
+  .teamFoto {
+    position: relative;
+    left: 55px;
+  }
+  .teamFoto img{
+    margin: 20px 10px !important;
+  }
 }
 
