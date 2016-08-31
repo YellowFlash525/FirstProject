@@ -363,22 +363,19 @@ li > .link-nav:hover {
   }
 }
 
-@media screen and (max-width: 620px)  {
+@media screen and (max-width: 615px)  {
   .teamFoto {
-    position: relative;
     left: 90px;
   }
 }
 
 @media screen and (max-width: 560px)  {
   .teamFoto {
-    position: relative;
     left: 70px;
   }
 }
 @media screen and (max-width: 480px)  {
   .teamFoto {
-    position: relative;
     left: 3px;
   }
   .teamFoto img{
@@ -388,21 +385,13 @@ li > .link-nav:hover {
 
 @media screen and (max-width: 380px)  {
   .teamFoto {
-    position: relative;
     left: 80px;
-  }
-  .teamFoto img{
-    margin: 20px 10px !important;
   }
 }
 
 @media screen and (max-width: 320px)  {
   .teamFoto {
-    position: relative;
     left: 55px;
-  }
-  .teamFoto img{
-    margin: 20px 10px !important;
   }
 }
 
