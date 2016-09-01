@@ -150,29 +150,33 @@ li > .link-nav:hover {
 
 /* Team present */
 
-.teamFoto {
+.teamParent {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0px;
-  position: relative;
-  left: 100px;
+  align-content: center;
+  justify-content: center;
+  margin: 20px 0;
   width: 100%;
 }
 
-.teamFoto img {
+.teamChild img {
   max-width: 200px;
   max-height: 200px;
+  margin: 30px 50px;
   border-radius: 50%;
-  margin: 20px 60px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
   opacity: 0.5;
   transition: all 0.3s ease-in-out;
 }
 
-.teamFoto img:hover {
+
+.teamChild:hover img {
   opacity: 1.0;
 }
 
-.teamFoto .infoTeam {
+.teamChild .infoTeam {
   max-width: 200px;
   max-height: 200px;
   display: none;
@@ -301,7 +305,13 @@ li > .link-nav:hover {
   .nav-scroll-title > .row > h2 {
     padding-left: 100px;
   }
+  .teamChild img {
+    max-width: 190px;
+    max-height: 190px;
+    margin: 30px 30px;
+  }
 }
+
 
 @media screen and (max-width: 760px)  {
   .carousel-inner > .item > img,
@@ -347,51 +357,22 @@ li > .link-nav:hover {
     width: 200px;
     height: 150px;
     margin: 0px 3px 5px;
-  }  
+  }
 }
 
-@media screen and (max-width: 650px)  {
-  .teamFoto {
-    position: relative;
-    left: 10px;
+@media screen and (max-width: 620px)  {
+  .teamChild img {
+    max-width: 180px;
+    max-height: 180px;
+    margin: 30px 20px;
   }
+}
 
-  .teamFoto img{
-    max-height: 160px;
+@media screen and (max-width: 460px)  {
+  .teamChild img {
     max-width: 160px;
-    margin: 20px 20px !important;
-  }
-}
-
-@media screen and (max-width: 615px)  {
-  .teamFoto {
-    left: 90px;
-  }
-}
-
-@media screen and (max-width: 560px)  {
-  .teamFoto {
-    left: 70px;
-  }
-}
-@media screen and (max-width: 480px)  {
-  .teamFoto {
-    left: 3px;
-  }
-  .teamFoto img{
-    margin: 20px 10px !important;
-  }
-}
-
-@media screen and (max-width: 380px)  {
-  .teamFoto {
-    left: 80px;
-  }
-}
-
-@media screen and (max-width: 320px)  {
-  .teamFoto {
-    left: 55px;
+    max-height: 160px;
+    margin: 30px 20px;
   }
 }
 
