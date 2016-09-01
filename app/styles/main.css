@@ -159,6 +159,11 @@ li > .link-nav:hover {
   width: 100%;
 }
 
+.teamChild {
+  opacity: 1.0;
+  transition: all 0.3s ease-in-out;
+}
+
 .teamChild img {
   max-width: 200px;
   max-height: 200px;
@@ -167,13 +172,14 @@ li > .link-nav:hover {
   overflow: hidden;
   position: relative;
   text-align: center;
-  opacity: 0.5;
-  transition: all 0.3s ease-in-out;
 }
 
 
-.teamChild:hover img {
-  opacity: 1.0;
+.teamChild:hover{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);  
+  opacity: 0.5;
 }
 
 .teamChild .infoTeam {
