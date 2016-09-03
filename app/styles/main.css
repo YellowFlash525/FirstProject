@@ -1,14 +1,13 @@
 /* Space out content a bit */
 body {
     font-family: "calluna-sans","Gill Sans",Calibri,"Trebuchet MS",sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 footer {
     position: static;
+    height: 300px;
     padding: 1rem;
-    color: white;
+    color: #FFF;
     text-align: center;
     background: #383838;
     box-shadow: inset 0 4px 10px rgba(0,0,0,.4),0 1px rgba(255,255,255,.2);
@@ -79,7 +78,7 @@ li > .link-nav:hover {
 
 .Box1 {
     padding: 25px;
-    margin: 40px 25px;
+    margin: 40px 0px 20px 0px;
     background-color: #FFFFFF;
     border-radius: 5px;
     text-align: justify;
@@ -159,34 +158,23 @@ li > .link-nav:hover {
   width: 100%;
 }
 
-.teamChild {
-  opacity: 1.0;
-  transition: all 0.3s ease-in-out;
-}
-
 .teamChild img {
   max-width: 200px;
   max-height: 200px;
   margin: 30px 50px;
   border-radius: 50%;
-  overflow: hidden;
   position: relative;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 1.0;
 }
 
 
-.teamChild:hover{
+.teamChild img:hover {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);  
   opacity: 0.5;
-}
-
-.teamChild .infoTeam {
-  max-width: 200px;
-  max-height: 200px;
-  display: none;
-
 }
 
 /* Navbar Toggle effect */ 
@@ -289,6 +277,10 @@ li > .link-nav:hover {
 .view-first:hover p {
   transform: translateX(0px) rotate(0deg);
   transition-delay: 0.4s;
+}
+
+.logo{
+  fill: #FFF;
 }
 
 
