@@ -2,17 +2,32 @@ $(".carousel").carousel({
 	interval: 5000
 })
 
+
 $(".link-nav").on('click', function() {
-    var scrollAnchor = $(this).attr('data-scroll'),
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    console.log(width);
+    if(width < 770){
+        var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 48;
+
+        $('body,html').animate({
+            scrollTop: scrollPoint
+        }, 1000);
+
+        return false;
+    }
+    else {
+        var scrollAnchor = $(this).attr('data-scroll'),
         scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
 
-    $('body,html').animate({
-        scrollTop: scrollPoint
-    }, 1000);
+        $('body,html').animate({
+            scrollTop: scrollPoint
+        }, 1000);
 
-    return false;
-
+        return false;
+    }
 })
+
 
 $(window).scroll(function() {
     var windscroll = $(window).scrollTop();

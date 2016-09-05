@@ -319,7 +319,7 @@ li > .link-nav:hover {
 }
 
 
-@media screen and (max-width: 760px)  {
+@media screen and (max-width: 768px)  {
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
@@ -330,7 +330,7 @@ li > .link-nav:hover {
   }
   
   .myNav {
-    height: 50px;
+    height: 45px;
     background-color: rgba(50,50,50, 1.0)
   }
 
