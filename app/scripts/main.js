@@ -16,7 +16,7 @@ $(".link-nav").on('click', function() {
 
 $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
-    var height = document.getElementById('team1').offsetTop - 60;
+    var height = document.getElementById('team').offsetTop - 60;
     if (windscroll >= height) {
         $('nav').removeClass('myNav');
         $('nav').addClass('fixedNav');
@@ -30,7 +30,7 @@ $(window).scroll(function() {
 }).scroll();
 
 $(function() {
-  $('.navbar-header').click(function() {
+  $('.navbar-header').on('click', function() {
     //Toggles the class for the outter circles
     $(this).toggleClass('clicked')
     //Toggles the class for the menu lines transformation into an X symbol

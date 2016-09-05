@@ -19,7 +19,7 @@ body[data-skin="Default"] {
 }
 
 ul.navbar-right > li:last-child {
-    padding-right: 20px;
+    padding-right: 50px;
 }
 
 .carousel-inner > .item > img,
@@ -40,6 +40,7 @@ li > .link-nav {
     transition: 0.3s ease;
     color: #D2D7D3 !important;
     padding: 20px 20px 15px;
+    margin: 0px 4px;
     font-size: 13px;
     font-family: 'futura-pt-condensed', Futura,sans-serif;
     text-transform: uppercase;
@@ -140,11 +141,19 @@ li > .link-nav:hover {
 }
 
 .nav-scroll-title > .row > h2 {
+    width: 100%;
     font-family: 'FuturaBook', Arial, sans-serif;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 150px;
+    padding-left: 20px;
     font-size: 20px;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Team present */
@@ -210,8 +219,7 @@ li > .link-nav:hover {
 .childView {
     width: 250px;
     height: 175px;
-    margin: 0px 5px 10px;
-    border: 6px solid #fff;
+    margin: 0px 2px 2px;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -223,7 +231,7 @@ li > .link-nav:hover {
     position: absolute;
     overflow: hidden;
     top: 0px;
-    left: -5px;
+    left: 0px;
 }
 
 .childView h2 {
