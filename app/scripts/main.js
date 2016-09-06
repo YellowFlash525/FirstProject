@@ -45,10 +45,17 @@ $(window).scroll(function() {
 }).scroll();
 
 $(function() {
-  $('.navbar-header').on('click', function() {
-    //Toggles the class for the outter circles
-    $(this).toggleClass('clicked')
+  $('.navbar-toggle').on('click', function() {
     //Toggles the class for the menu lines transformation into an X symbol
-    $('.navbar-toggle').toggleClass('clicked')
+    $(this).toggleClass('clicked');
   })
 })
+
+$('.navbar-collapse a').on('click', function() {
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if(width < 770){
+        $('.navbar-toggle').toggleClass('clicked');
+        $('.navbar-collapse').collapse('toggle');
+    }
+})
+
