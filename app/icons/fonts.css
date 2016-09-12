@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?7jlwxh');
-    src:    url('fonts/icomoon.eot?7jlwxh#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?7jlwxh') format('truetype'),
-        url('fonts/icomoon.woff?7jlwxh') format('woff'),
-        url('fonts/icomoon.svg?7jlwxh#icomoon') format('svg');
+        src:  url('fonts/icomoon.eot?p1joyg');
+        src:  url('fonts/icomoon.eot?p1joyg#iefix') format('embedded-opentype'),
+              url('fonts/icomoon.ttf?p1joyg') format('truetype'),
+              url('fonts/icomoon.woff?p1joyg') format('woff'),
+              url('fonts/icomoon.svg?p1joyg#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-i {
+span {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -24,23 +24,32 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail4:before {
-    content: "\1f320";
+.icon-linkin-park--band--vector-logo_converted:before {
+  content: "\e900";
 }
-.icon-facebook2:before {
-    content: "\ea91";
+
+.icon-google:before {
+  content: "\ea88";
 }
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
 .icon-spotify:before {
     content: "\ea94";
 }
+
 .icon-twitter:before {
     content: "\ea96";
 }
+
 .icon-youtube:before {
     content: "\ea9d";
 }
-.icon-soundcloud2:before {
-    content: "\eac4";
+
+.icon-soundcloud:before {
+  content: "\eac3";
 }
 
 
