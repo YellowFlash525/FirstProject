@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-    font-family: "calluna-sans","Gill Sans",Calibri,"Trebuchet MS",sans-serif;
+    font-family: "calluna-sans",Calibri,sans-serif;
 }
 
 footer {
@@ -26,7 +26,9 @@ ul.navbar-right > li:last-child {
   .carousel-inner > .item > a > img {
       width: 100%;
       max-height: 560px !important;
-  }
+}
+
+/* Navbar Style */
 
 .slidder {
     margin-top: -20px;
@@ -41,8 +43,7 @@ li > .link-nav {
     color: #D2D7D3 !important;
     padding: 20px 20px 15px;
     margin: 0px 4px;
-    font-size: 13px;
-    font-family: 'futura-pt-condensed', Futura,sans-serif;
+    font-size: 15px;
     text-transform: uppercase;
     border-top: 4px solid rgba(50,50,50, 0.0);
 }
@@ -51,8 +52,6 @@ li > .link-nav:hover {
     border-top: 4px solid #D2D7D3;
     padding: 15px 15px;
 }
-
-/* Navbar Style */
 
 .myNav {
     background-color: rgba(50,50,50, 0.8);
@@ -65,14 +64,6 @@ li > .link-nav:hover {
     height: 60px;
     border-bottom: 0px;
     margin-right: 0px;
-}
-
-
-.navbar-header #brand{
-    font-family: 'FuturaBook', Arial, sans-serif;
-    color: #FFFFFF;
-    font-size: 25px;
-    padding-top: 16px;
 }
 
 /* Paralax and progress bar*/
@@ -130,14 +121,6 @@ li > .link-nav:hover {
   box-shadow: inset 0 1px #fff,0 2px 4px rgba(0,0,0,.2);
 }
 
-.scroll-section > .row > h2 {
-  font-family: 'FuturaBook', Arial, sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  font-size: 20px;
-}
-
 .scroll-section > .row  span {
   display: inline-block;
   vertical-align: middle;
@@ -152,6 +135,7 @@ li > .link-nav:hover {
 .scroll-title {
   font-family: 'FuturaBook', Arial, sans-serif;
   text-transform: uppercase;
+  padding-left: 7px;
   font-size: 21px;
 }
 
@@ -277,7 +261,7 @@ li > .link-nav:hover {
 .childView {
     width: 250px;
     height: 175px;
-    margin: 0px 2px 2px;
+    margin: 0px 1px 2px;
     overflow: hidden;
     position: relative;
     text-align: center;
