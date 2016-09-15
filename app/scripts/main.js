@@ -3,14 +3,28 @@ $(".carousel").carousel({
 })
 
 $(".link-nav").on('click', function() {
-    var scrollAnchor = $(this).attr('data-scroll'),
-        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
-
-    $('body,html').animate({
-        scrollTop: scrollPoint
-    }, 1000);
-
-    return false;
+     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+     console.log(width);
+     if(width < 770){
+         var scrollAnchor = $(this).attr('data-scroll'),
+         scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 48;
+ 
+         $('body,html').animate({
+             scrollTop: scrollPoint
+         }, 1000);
+ 
+         return false;
+     }
+     else {
+         var scrollAnchor = $(this).attr('data-scroll'),
+         scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+ 
+         $('body,html').animate({
+             scrollTop: scrollPoint
+         }, 1000);
+ 
+         return false;
+     }
 
 })
 
@@ -37,3 +51,10 @@ $(function() {
     $('.navbar-toggle').toggleClass('clicked')
   })
 })
+
+$('.nav a').on('click', function(){
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    if(width < 770){
+        $('.navbar-toggle').click() //bootstrap 3.x by Richard
+    }   
+});
