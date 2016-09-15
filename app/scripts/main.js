@@ -1,5 +1,5 @@
 $(".carousel").carousel({
-	interval: 5000
+	interval: 3500
 })
 
 $(".link-nav").on('click', function() {
