@@ -187,7 +187,7 @@ li > .link-nav:hover {
   margin-left: 15px;
 }
 
-.imageBox1 img {
+.Box1 img {
   max-width: 550px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -196,7 +196,7 @@ li > .link-nav:hover {
   border-bottom: 2px solid black;
 }
 
-.imageBox2 img {
+.Box2 img {
   max-width: 270px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -210,7 +210,7 @@ li > .link-nav:hover {
   text-align: left;
 }
 
-.imageBox1 img:hover, .imageBox2 img:hover {
+.Box1 img:hover, .Box2 img:hover {
   opacity: 0.5;
 }
 
