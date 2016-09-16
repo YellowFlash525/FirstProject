@@ -149,9 +149,9 @@ li > .link-nav:hover {
 
 .Box1 {
   width: 550px;
-  height: 600px;
+  height: 500px;
   display: inline-flex;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 4px 20px 4px;
   background-color: #FFFFFF;
   border-radius: 5px;
   box-shadow: inset 0 5px #fff,0 2px 4px rgba(0,0,0,.2);
@@ -159,32 +159,20 @@ li > .link-nav:hover {
 
 .Box2 {
   width: 270px;
-  height: 400px;
+  height: 360px;
   display: inline-flex;
-  margin: 20px 0px 40px 0px;
+  margin: 20px 4px 40px 4px;
   background-color: #FFFFFF;
   border-radius: 5px;
   box-shadow: inset 0 5px #fff,0 2px 4px rgba(0,0,0,.2);
 }
 
 .wrapper .Box1:first-child {
-  margin-right: 13px;
+  margin-right: 5px;
 }
 
-.wrapper .Box1:last-child {
-  margin-left: 13px;
-}
-
-.wrapper .Box2:first-child {
-  margin-right: 15px;
-}
-
-.wrapper .Box2:nth-child(2) {
-  margin-right: 10px;
-}
-
-.wrapper .Box2:last-child {
-  margin-left: 15px;
+.wrapper .Box1:last-child(2) {
+  margin-left: 5px;
 }
 
 .Box1 img {
@@ -206,8 +194,17 @@ li > .link-nav:hover {
 }
 
 .textBox1, .textBox2 {
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   text-align: left;
+}
+
+.textBox2 > h3 {
+    margin-bottom: 0px;
+}
+
+.textBox2 > p {
+  font-style: italic;
+  font-size: 14px;
 }
 
 .Box1 img:hover, .Box2 img:hover {

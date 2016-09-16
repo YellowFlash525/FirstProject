@@ -11,7 +11,7 @@ $(".link-nav").on('click', function() {
  
          $('body,html').animate({
              scrollTop: scrollPoint
-         }, 1000);
+         }, 1500);
  
          return false;
      }
@@ -44,17 +44,15 @@ $(window).scroll(function() {
 }).scroll();
 
 $(function() {
-  $('.navbar-header').click(function() {
+  $('.navbar-toggle').click(function() {
     //Toggles the class for the outter circles
-    $(this).toggleClass('clicked')
-    //Toggles the class for the menu lines transformation into an X symbol
-    $('.navbar-toggle').toggleClass('clicked')
+    $(this).toggleClass('clicked');
   })
 })
 
 $('.nav a').on('click', function(){
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     if(width < 770){
-        $('.navbar-toggle').click() //bootstrap 3.x by Richard
+        $('.navbar-toggle').click(); //bootstrap 3.x by Richard
     }   
 });
