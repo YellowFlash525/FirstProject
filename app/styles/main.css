@@ -92,7 +92,7 @@ li > .link-nav:hover {
   box-shadow: inset 0 4px 10px rgba(0,0,0,.4),0 1px rgba(255,255,255,.2);
   border-color: #080808;
   text-align: center;
-  padding: 24px 0;
+  padding: 23px 0;
 }
 
 .social-media-icon > .row > a > span {
@@ -297,7 +297,7 @@ li > .link-nav:hover {
 .childView {
   width: 250px;
   height: 175px;
-  margin: 0px 1px 2px;
+  margin: 0;
   overflow: hidden;
   position: relative;
   text-align: center;
