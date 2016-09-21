@@ -249,8 +249,8 @@ li > .link-nav:hover {
   max-height: 200px;
   position: relative;
   border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-  opacity: 1.0;
+  transition: all 0.2s linear;
+  z-index: 2;
 }
 
 .teamChild .infoTeam {
@@ -262,6 +262,9 @@ li > .link-nav:hover {
   left: 0px;
   text-align: center;
   border-radius: 50%;
+  background: #FFF;
+  transition: all 0.2s linear;
+  z-index: 1;
 }
 
 .teamChild h2 {
@@ -274,9 +277,16 @@ li > .link-nav:hover {
   margin: 85px 0 0 0;
 }
 
-.teamChild:hover img{  
-  opacity: 0.5;
+.teamChild:hover > img {
+  transform: rotateY(180deg);
+  z-index: 1;
 }
+
+.teamChild:hover .infoTeam {
+  transform: rotateY(180deg);
+  z-index: 2;
+}
+
 
 /* Navbar Toggle effect */ 
 
