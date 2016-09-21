@@ -249,7 +249,7 @@ li > .link-nav:hover {
   max-height: 200px;
   position: relative;
   border-radius: 50%;
-  transition: all 0.2s linear;
+  transition: all 250ms linear;
   z-index: 2;
 }
 
@@ -262,8 +262,7 @@ li > .link-nav:hover {
   left: 0px;
   text-align: center;
   border-radius: 50%;
-  background: #FFF;
-  transition: all 0.2s linear;
+  transition: all 250ms linear;
   z-index: 1;
 }
 
@@ -284,6 +283,7 @@ li > .link-nav:hover {
 
 .teamChild:hover .infoTeam {
   transform: rotateY(180deg);
+  background: #FFF;
   z-index: 2;
 }
 
@@ -432,6 +432,11 @@ li > .link-nav:hover {
     max-width: 190px;
     max-height: 190px;
   }
+
+  .teamChild .infoTeam {
+    width: 190px;
+    height: 190px;
+  }
 }
 
 @media screen and (max-width: 870px){
@@ -504,6 +509,11 @@ li > .link-nav:hover {
     max-height: 180px;
   }
 
+  .teamChild .infoTeam {
+    width: 180px;
+    height: 180px;
+  }
+
   .teamChild h2 {
     margin: 80px 0 0 -15px;
   }
@@ -530,6 +540,11 @@ li > .link-nav:hover {
   .teamChild img {
     max-width: 160px;
     max-height: 160px;
+  }
+
+  .teamChild .infoTeam {
+    width: 160px;
+    height: 160px;
   }
   
   .teamChild h2 {
