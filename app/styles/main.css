@@ -194,6 +194,9 @@ li > .link-nav:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   opacity: 1.0;
   border-bottom: 2px solid black;
 }
@@ -203,6 +206,9 @@ li > .link-nav:hover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   opacity: 1.0;
   border-bottom: 2px solid black;
 }
@@ -251,6 +257,9 @@ li > .link-nav:hover {
   overflow: hidden;
   border-radius: 50%;
   transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
   z-index: 2;
 }
 
@@ -264,6 +273,9 @@ li > .link-nav:hover {
   text-align: center;
   border-radius: 50%;
   transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
   z-index: 1;
 }
 
