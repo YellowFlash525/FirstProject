@@ -418,6 +418,33 @@ li > .link-nav:hover {
   transition-delay: 0.4s;
 }
 
+/* Tour section style */
+
+.tourItem {
+  padding: 20px 0 20px 20px;
+  margin: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.tourItem:first-child {
+  border-top: 1px solid black;
+  margin-top: 40px;
+}
+
+.tourItem:last-child {
+  margin-bottom: 40px;
+}
+
+.tourInfo, .tourDate {
+  display: block;
+}
+
+.tourItem > .tourDate p, .tourItem > .tourInfo p, .tourItem > .tourInfo h3 {
+  margin: 0;
+}
+
+/* Responsive: Portrait large and down */
+
 @media screen and (max-width: 1150px){
   .childBox1 {
     width: 410px;
@@ -427,7 +454,6 @@ li > .link-nav:hover {
   }
 }
 
-/* Responsive: Portrait large and down */
 @media screen and (max-width: 1060px) {
   .container-fluid.social-media-icon {
     display: none;
