@@ -421,9 +421,10 @@ li > .link-nav:hover {
 /* Tour section style */
 
 .tourItem {
-  padding: 20px 0 20px 20px;
-  margin: 10px 0;
+  padding: 35px 40px 35px 40px;
+  margin: 0 0;
   border-bottom: 1px solid black;
+  position: relative;
 }
 
 .tourItem:first-child {
@@ -435,8 +436,45 @@ li > .link-nav:hover {
   margin-bottom: 40px;
 }
 
+.tourDate {
+  margin-right: 50px;
+}
+
 .tourInfo, .tourDate {
-  display: block;
+  display: inline-block;
+}
+
+.tourInfo {
+  padding: 5px 0 0 50px;
+  position: absolute;
+  margin: 0 auto; 
+}
+
+.tourButton {
+  background-color: #D3D3D3;
+  border: 1px solid #181818;
+  border-radius: 7%;
+  font-size: 19px;
+  padding: 7px 14px;
+  float: right;
+  margin: 10px auto 0;
+  transition: all 200ms linear;
+}
+
+.tourButton > a {
+  color: #181818;
+  text-decoration: none;
+}
+
+.tourButton:hover {
+  background-color: #181818;
+  color: #D3D3D3;
+  border: 1px solid #D3D3D3;
+}
+
+.tourButton:hover > a {
+  color: #D3D3D3;
+  text-decoration: none;
 }
 
 .tourItem > .tourDate p, .tourItem > .tourInfo p, .tourItem > .tourInfo h3 {
