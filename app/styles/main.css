@@ -385,9 +385,6 @@ li > .link-nav:hover {
   text-align: center;
 }
 
-.view-first img { 
-  transition: all 0.2s linear;
-}
 .view-first .mask {
   background-color: rgba(0,0,0,0.6);
   opacity: 0;
@@ -445,9 +442,9 @@ li > .link-nav:hover {
 }
 
 .tourInfo {
-  padding: 5px 0 0 50px;
+  padding: 5px 0 0 0;
   position: absolute;
-  margin: 0 auto; 
+  margin-left: 50px; 
 }
 
 .tourButton {
@@ -484,9 +481,16 @@ li > .link-nav:hover {
 /* Responsive: Portrait large and down */
 
 @media screen and (max-width: 1150px){
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      max-height: 500px !important;
+  }
+
   .childBox1 {
     width: 410px;
   }
+
   .childBox1 img {
     max-width: 410px;
   }
@@ -549,7 +553,7 @@ li > .link-nav:hover {
   }
   
   .myNav {
-    height: 45px;
+    height: 50px;
     background-color: rgba(50,50,50, 1.0)
   }
 
@@ -577,12 +581,6 @@ li > .link-nav:hover {
   .post-title {
     margin-top: 1rem;
   }  
-
-  .childGallery {
-    width: 200px;
-    height: 150px;
-    margin: 0px 3px 5px;
-  }
 }
 
 @media screen and (max-width: 620px)  {
@@ -604,6 +602,14 @@ li > .link-nav:hover {
   .infoTeam h2 {
     margin: 40px 0 10px 0;
   }
+
+  .tourDate {
+    margin-right: 25px;
+  }
+
+  .tourInfo {
+    margin-left: 25px;
+  }
 }
 
 @media screen and (max-width: 590px){
@@ -613,6 +619,25 @@ li > .link-nav:hover {
 
   .childBox2 img {
     max-width: 550px;
+  }
+
+  .tourInfo, .tourDate {
+    display: block;
+  }
+
+  .tourDate p {
+    display: inline-block;
+  }
+
+  .tourInfo {
+    position: relative;
+    margin: 0;
+  }
+
+  .tourButton {
+    position: relative;
+    float: right;
+    margin: -40px 0 0 0;
   }
 }
 
@@ -640,6 +665,43 @@ li > .link-nav:hover {
 
   .infoTeam p {
     font-size: 13px;
+  }
+
+  .scroll-section {
+    padding: 16px 0 21px;
+  }
+}
+
+@media screen and (max-width: 480px)  {
+  .teamChild {
+    width: 140px;
+    height: 140px;
+    margin: 20px 15px;
+  }
+
+  .teamChild img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+
+  .teamChild .infoTeam {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .infoTeam h2 {
+    margin: 30px 0 5px 0;
+    font-size: 12px;
+  }
+
+  .infoTeam p {
+    font-size: 11px;
+  }
+
+  .tourButton {
+    position: relative;
+    float: none;
+    margin: 10px 0 0 0;
   }
 }
 
