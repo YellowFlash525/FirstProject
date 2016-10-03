@@ -21,18 +21,14 @@ footer {
 }
 
 .foot-logo {
-  display: block;
+  position: relative;
   width: 350px;
   height: 250px;
-  margin: 0 auto 1em;
+  margin: 1em auto;
 }
 
 .footer-info {
   text-align: center;
-}
-
-.footer-info span:first-child {
-  margin-right: 30px;
 }
 
 /* Carousel */
@@ -198,19 +194,19 @@ li > .link-nav:hover {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   opacity: 1.0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
 }
 
 .childBox2 img {
   max-width: 270px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
   opacity: 1.0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000;
 }
 
 .textBox1, .textBox2 {
@@ -389,16 +385,25 @@ li > .link-nav:hover {
   background-color: rgba(0,0,0,0.6);
   opacity: 0;
   transform: translate(460px, -100px) rotate(180deg);
-  transition: all 0.2s 0.4s ease-in-out;
+  transition: all 200ms 400ms ease-in-out;
+  -moz-transition: all 200ms 400ms ease-in-out;
+  -webkit-transition: all 200ms 400ms ease-in-out;
+  -o-transition: all 200ms 400ms ease-in-out;
 }
 
 .view-first h2 {
   transform: translateY(-100px);
-  transition: all 0.2s ease-in-out;
+  transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
 }
 .view-first p { 
   transform: translateX(300px) rotate(90deg);
-  transition: all 0.2s linear;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
 }
 
 .view-first:hover .mask { 
@@ -420,12 +425,12 @@ li > .link-nav:hover {
 .tourItem {
   padding: 35px 40px 35px 40px;
   margin: 0 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
   position: relative;
 }
 
 .tourItem:first-child {
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
   margin-top: 40px;
 }
 
@@ -456,6 +461,9 @@ li > .link-nav:hover {
   float: right;
   margin: 10px auto 0;
   transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
 }
 
 .tourButton > a {
