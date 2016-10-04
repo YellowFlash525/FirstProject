@@ -36,7 +36,6 @@ $(window).scroll(function() {
         $('nav').addClass('fixedNav');
 
     } else {
-
         $('nav').removeClass('fixedNav');
         $('nav').addClass('myNav');
     }
@@ -55,4 +54,4 @@ $('.nav a').on('click', function(){
     if(width < 770){
         $('.navbar-toggle').click(); //bootstrap 3.x by Richard
     }   
-});
+})
