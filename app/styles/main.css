@@ -462,6 +462,18 @@ li > .link-nav:hover {
   -o-transition: all 200ms linear;
 }
 
+.tourList {
+  position: relative;
+  margin: 3em;
+  text-align: center;
+}
+
+.tourList a {
+  text-decoration: none;
+  color: #181818;
+  font-size: 15px;
+}
+
 .tourButton > a {
   color: #181818;
   text-decoration: none;
